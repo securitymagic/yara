@@ -9,7 +9,7 @@ rule possible_wwlib_hijacking
         description = "observed with campaigns such as APT32, this attempts to look for the archive files such as RAR."
         reference = "040abac56542a2e0f384adf37c8f95b2b6e6ce3a0ff969e3c1d572e6b4053ff3" 
     strings:
-        $a = "\\wwlib.dll"
+        $a = "/wwlib.dll"
         $neg = "This program cannot be run in DOS mode"
     condition:
         $a and not $neg
