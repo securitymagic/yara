@@ -6,8 +6,7 @@ rule Multifamily_RAT_Detection
 {
    meta:
         author = "Lucas Acha (http://www.lukeacha.com)"
-        description = "Generic Detection for multiple RAT families, PUPs, Packers and occassional FP"
-        reference = "http://security5magics.blogspot.com/2020/12/tracking-jupyter-malware.html" 
+        description = "Generic Detection for multiple RAT families, PUPs, Packers and suspicious executables"
   strings:
       $htt1 = "WScript.Shell" wide
 	    $htt2 = "Software\\Microsoft\\Windows\\CurrentVersion\\Run" wide
