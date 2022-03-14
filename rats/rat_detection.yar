@@ -9,11 +9,11 @@ rule Multifamily_RAT_Detection
         description = "Generic Detection for multiple RAT families, PUPs, Packers and suspicious executables"
   strings:
       $htt1 = "WScript.Shell" wide
-	    $htt2 = "Software\\Microsoft\\Windows\\CurrentVersion\\Run" wide
+      $htt2 = "Software\\Microsoft\\Windows\\CurrentVersion\\Run" wide
       $htt3 = "\\nuR\\noisreVtnerruC\\swodniW" wide
       $htt4 = "SecurityCenter2" wide
       $htt5 = ":ptth" wide
-	    $htt6 = ":sptth" wide
+      $htt6 = ":sptth" wide
       $htt7 = "System.Reflection" ascii
       $htt8 = "ConfuserEx" ascii
       $htt9 = ".NET Framework 4 Client Profile" ascii
