@@ -11,5 +11,5 @@ rule Possible_Emotet_DLL
       $htt1 = "MS Shell Dlg" wide
       $mzh = "This program cannot be run in DOS mode"
   condition:
-      pe.imphash() == "066d4e2c6288c042d958ddc93cfa07f1" and $htt1 and $mzh
+      (pe.imphash() == "066d4e2c6288c042d958ddc93cfa07f1" or pe.imphash() == "	38617efee413c2d5919637769ddb6a9") and $htt1 and $mzh
 }
