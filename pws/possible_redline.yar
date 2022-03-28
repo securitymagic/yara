@@ -2,6 +2,9 @@ import "pe"
 
 rule Redline_Detection
 {
+   meta:
+      author = "Lucas Acha (http://www.lukeacha.com)"
+      description = "Observed with Redline Stealer injected DLL"
   strings:
       $htt1 = "System.Reflection.ReflectionContext" wide
       $htt7 = "System.Runtime.Remoting" ascii
