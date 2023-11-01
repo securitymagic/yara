@@ -11,7 +11,7 @@ rule HydraSeven_loader
   strings:
       $mz = "MZ"
       $astring1 = "app.dll" ascii
-      $wstring1 = "webView21" wide
+      $wstring1 = "webView2" wide
       $wstring2 = /https?:\/\/.{1,25}\/main/ wide
   condition:
     $astring1 and $wstring1 and $wstring2 and $mz at 0 and filesize<1MB
