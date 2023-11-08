@@ -13,6 +13,7 @@ rule HydraSeven_loader
       $astring1 = "app.dll" ascii
       $wstring1 = "webView2" wide
       $wstring2 = /https?:\/\/.{1,35}\/main/ wide
+      $d = "EmbeddedBrowserWebView.dll" wide
   condition:
-    $astring1 and $wstring1 and $wstring2 and $mz at 0 and filesize<1MB
+    (($astring1 and $wstring1 and $wstring2) or ($d and $wstring2)) and $mz at 0 and filesize<1MB
 }
