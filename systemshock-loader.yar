@@ -2,7 +2,7 @@ rule systemshock_loader
 {
   meta:
     author = "Luke Acha"
-    description = "54d1cde4842fdccc63b9beece056a9b617cbbe106d1cb47dd8d248971bf82bc2"
+    description = "https://blog.lukeacha.com/2025/10/systemshock-loader-look-at-malware.html"
     target_entity = "file"
 
   strings:
