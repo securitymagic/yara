@@ -1,4 +1,4 @@
-rule 2025_xorkey_powerdoc
+rule xorkey_powerdoc_2025
 {
     meta:
         author = "Luke Acha"
