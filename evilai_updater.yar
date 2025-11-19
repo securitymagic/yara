@@ -2,15 +2,17 @@ rule possible_evilai_updater
 {
   meta:
     author = "Luke"
-    description = "Detects updater binaries referenced in evilai tasks: ConvertMate"
+    description = "Detects updater binaries referenced in evilai tasks: ConvertMate: https://blog.lukeacha.com/2025/11/suspicious-converter-obfuscated-strings.html"
     target_entity = "file"
 
   strings:
-    $a = "&user_id=" wide
-    $b = ".txt" wide
-    $c = /\d{16}/ wide
+    $wide1 = "&user_id=" wide
+    $wide2 = ".txt" wide
+    $reg   = /17\d{14}/ wide
+    $base  = "ZXZlbnRfbmFtZQ==" wide   // literal Base64, wide
 
   condition:
-    all of them and
-    filesize < 60KB
+    $reg and
+    filesize < 60KB and
+    ( ( $wide1 and $wide2 ) or $base )
 }
