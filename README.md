@@ -28,6 +28,7 @@ You’ll find posts that walk through:
 - Hunting tips and example usage
 
 Highlighted Pages:
+
 https://blog.lukeacha.com/2025/11/fake-pdf-converter-hides-dark-secret.html
 https://blog.lukeacha.com/2025/10/systemshock-loader-look-at-malware.html
 https://blog.lukeacha.com/2025/06/suspicious-recipe-app.html
