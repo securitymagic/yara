@@ -30,9 +30,13 @@ You’ll find posts that walk through:
 Highlighted Pages:
 
 https://blog.lukeacha.com/2025/11/fake-pdf-converter-hides-dark-secret.html
+
 https://blog.lukeacha.com/2025/10/systemshock-loader-look-at-malware.html
+
 https://blog.lukeacha.com/2025/06/suspicious-recipe-app.html
+
 https://blog.lukeacha.com/2023/10/interesting-customloader-observed-in.html
+
 https://blog.lukeacha.com/2020/12/tracking-jupyter-malware.html
 
 Older posts and legacy content are also mirrored here:
