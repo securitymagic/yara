@@ -6,7 +6,7 @@ rule xorkey_powerdoc_2025
 
     strings:
         $s = "CSIRELSCSIRELS" wide
-
+        $s2 = "ZX8qNsT7bW4vK1pD-y5823401974" wide
     condition:
-        $s
+        any of them
 }
