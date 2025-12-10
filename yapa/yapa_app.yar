@@ -5,8 +5,9 @@ rule possible_yapa_app
     description = "Detects ConvertMate, PDFSkills, PDFusion, and other similar applications. https://blog.lukeacha.com/2025/11/suspicious-converter-obfuscated-strings.html"
     target_entity = "file"
   strings:
-    $a = "-ep RemoteSigned -File \"" wide
-    $b = "c2ltdWxhdGlvbl9zdGF0dXM=" wide
+    $a = "=c2bs9lbvlGdhxGbhR3cul2X05WZpx2Y" wide
+    $b = "==gclN3dvJnYfRWYvxmb39GZ" wide
+    $c = "=42bpRXds92clJ3XuVWZyN2c" wide
   condition:
-    any of them
+    all of them
 }
