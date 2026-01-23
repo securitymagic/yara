@@ -1,6 +1,6 @@
 import "pe"
 
-rule hero-request
+rule hero_re_quest
 {
   meta:
     author = "Luke Acha"
