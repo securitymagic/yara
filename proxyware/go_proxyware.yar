@@ -4,7 +4,7 @@ rule Proxyware_Go_Backconnect_Family
 {
     meta:
         description = "Detects old and possible new generations of the backconnect/proxyware DLL family"
-        author = "Lucas Acha"
+        author = "Luke Acha"
         date = "2026-06-26"
 
     strings:
