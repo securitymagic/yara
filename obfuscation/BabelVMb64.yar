@@ -6,7 +6,7 @@ rule DotNet_BabelVM_Encoded_Indicator
         classification = "protector indicator, not malware family"
 
     strings:
-        $babel_b64 = "YmFiZWx2bQ==" ascii wide
+        $babel_b64 = "YWJlbHZtO3Ntb2tldGVzdA=="  wide
 
     condition:
         uint16(0) == 0x5A4D and
